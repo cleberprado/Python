@@ -1,11 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ## variaveis
-
-# In[58]:
-
-
 Data = input("digite a data EX 00/00/00:  ")
 Empresa = input("digite o nome da empresa: ")
 Sevico = input("digite o serviço prestado: ")
@@ -13,22 +5,10 @@ Descricao = input("digite o que foi realizado: ")
 
 
 
-# In[59]:
-
-
 get_ipython().system('pip install fpdf')
 
 
-
-
-
-# In[60]:
-
-
 from fpdf import FPDF
-
-
-# In[74]:
 
 
 pdf = FPDF()
@@ -42,22 +22,5 @@ pdf.text(51,114, Descricao)
 
 pdf.output("relat.pdf")
 print("orçamento feito")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
