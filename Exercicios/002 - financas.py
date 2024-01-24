@@ -1,22 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ## criando sistemas de finanças
-
-# In[19]:
-
-
 get_ipython().system('pip install yfinance')
 
-
-# In[20]:
-
-
 import yfinance
-
-
-# In[27]:
-
 
 codigo = input("Digite o codigo desejado: ")
 tempo = input("digite o tempo desejado: ")
@@ -30,24 +14,14 @@ minima = fechamento.min()
 atual = fechamento[-1]
 fechamento.plot()
 
-
-# In[10]:
-
-
 get_ipython().system('pip install pyautogui')
-
-
-# In[24]:
 
 
 import pyautogui
 import pyperclip
 
 
-# In[28]:
-
-
-pyautogui.PAUSE = 4
+pyautogui.PAUSE = 2
 #abrir uma nova aba no navegador
 pyautogui.hotkey("ctrl", "t")
 #digitar o site 
